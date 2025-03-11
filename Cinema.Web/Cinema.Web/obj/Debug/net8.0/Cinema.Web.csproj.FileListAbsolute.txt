@@ -1,0 +1,8 @@
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.csproj.AssemblyReference.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.AssemblyInfoInputs.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.AssemblyInfo.cs
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.csproj.CoreCompileInputs.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.RazorAssemblyInfo.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.Web\obj\Debug\net8.0\Cinema.Web.RazorAssemblyInfo.cs

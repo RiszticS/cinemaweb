@@ -1,0 +1,18 @@
+﻿@using ELTE.Cinema.Web.Utility
+@model MovieDetailViewModel
+
+
+<div class="row">
+    <div class="col-md-3">
+        <img class="img-fluid" src="@Model.Movie.Image.ToImgSrc()" alt="@Model.Movie.Title" />
+    </div>
+    <div class="col-md-9">
+        <h1>@Model.Movie.Title</h1>
+        <ul class="list-unstyled">
+            <li><strong>Released:</strong> @Model.Movie.Year</li>
+            <li><strong>Directed by:</strong> @Model.Movie.Director</li>
+            <li><strong>Length:</strong> @Model.Movie.Length minutes</li>
+        </ul>
+        <p>@Model.Movie.Synopsis</p>
+    </div>
+</div>

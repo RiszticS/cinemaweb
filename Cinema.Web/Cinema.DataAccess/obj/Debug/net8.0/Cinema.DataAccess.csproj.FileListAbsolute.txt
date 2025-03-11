@@ -1,0 +1,5 @@
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.DataAccess\obj\Debug\net8.0\Cinema.DataAccess.csproj.AssemblyReference.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.DataAccess\obj\Debug\net8.0\Cinema.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.DataAccess\obj\Debug\net8.0\Cinema.DataAccess.AssemblyInfoInputs.cache
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.DataAccess\obj\Debug\net8.0\Cinema.DataAccess.AssemblyInfo.cs
+C:\Users\RiszticS\Desktop\ELTE VI. félév\Modern webalkalmazások fejlesztése .NET környezetben\Cinema.Web\Cinema.DataAccess\obj\Debug\net8.0\Cinema.DataAccess.csproj.CoreCompileInputs.cache
