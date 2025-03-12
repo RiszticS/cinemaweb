@@ -9,6 +9,8 @@ namespace Cinema.Web.Infrastructure
         public WebMappingProfile()
         {
             CreateMap<Movie, MovieViewModel>(MemberList.Destination);
+            CreateMap<Screening, ScreeningViewModel>(MemberList.Destination);
+            CreateMap<Room, RoomViewModel>(MemberList.Destination);
         }
     }
 

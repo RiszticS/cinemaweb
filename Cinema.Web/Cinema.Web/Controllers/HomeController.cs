@@ -9,12 +9,14 @@ namespace Cinema.Web.Controllers;
 public class HomeController : Controller
 {
     private readonly IMoviesService _moviesService;
+    private readonly IScreeningsService _screeningsService;
     private readonly IMapper _mapper;
     private readonly IConfiguration _configuration;
 
-    public HomeController(IMoviesService moviesService, IMapper mapper, IConfiguration configuration)
+    public HomeController(IMoviesService moviesService, IScreeningsService screeningsService, IMapper mapper, IConfiguration configuration)
     {
         _moviesService = moviesService;
+        _screeningsService = screeningsService;
         _mapper = mapper;
         _configuration = configuration;
     }
@@ -24,9 +26,13 @@ public class HomeController : Controller
         var lastestMovies = await _moviesService.GetLatestMoviesAsync(int.Parse(_configuration["NewMovieCount"]!));
         var lastestMoviesViewModels = _mapper.Map<List<MovieViewModel>>(lastestMovies);
 
+        var screenings = await _screeningsService.GetForDateAsync(DateTime.Now);
+        var screeningViewModels = _mapper.Map<List<ScreeningViewModel>>(screenings);
+
         var homePageViewModel = new HomePageViewModel()
         {
-            LatestMovies = lastestMoviesViewModels
+            LatestMovies = lastestMoviesViewModels,
+            TodayScreenings = screeningViewModels
         };
 
         return View(homePageViewModel);

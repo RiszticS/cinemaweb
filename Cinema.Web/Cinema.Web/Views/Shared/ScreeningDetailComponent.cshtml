@@ -1,0 +1,28 @@
+﻿@model Cinema.Web.Models.ScreeningViewModel
+
+@{
+    bool showMovieDetails = ViewData["showMovieDetails"] != null && (bool)ViewData["showMovieDetails"]!;
+}
+
+<div class="card my-3">
+    @if (showMovieDetails)
+    {
+        <div class="card-header">
+            <h4 class="my-0">
+                <a class="text-dark text-underline-hover" asp-action="Details" asp-controller="Movie" asp-route-movieId="@Model.Movie.Id">@Model.Movie.Title</a>
+            </h4>
+        </div>
+    }
+
+    <div class="card-body">
+        <ul class="list-unstyled m-0">
+            <li><strong>Starts at:</strong> @Model.StartsAt.ToLocalTime()</li>
+            @if (showMovieDetails)
+            {
+                <li><strong>Length:</strong> @Model.Movie.Length minutes</li>
+            }
+            <li><strong>Room:</strong> @Model.Room.Name</li>
+            <li><strong>Price per ticket:</strong> @Model.Price</li>
+        </ul>
+    </div>
+</div>

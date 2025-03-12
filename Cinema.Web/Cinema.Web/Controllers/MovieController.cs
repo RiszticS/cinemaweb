@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Cinema.DataAccess.Models;
 using Cinema.DataAccess.Services;
 using Cinema.Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -8,11 +9,13 @@ namespace Cinema.Web.Controllers
     public class MovieController : Controller
     {
         private readonly IMoviesService _moviesService;
+        private readonly IScreeningsService _screeningsService;
         private readonly IMapper _mapper;
 
-        public MovieController(IMoviesService moviesService, IMapper mapper)
+        public MovieController(IMoviesService moviesService, IScreeningsService screeningsesService, IMapper mapper)
         {
             _moviesService = moviesService;
+            _screeningsService = screeningsesService;
             _mapper = mapper;
         }
 
@@ -27,9 +30,14 @@ namespace Cinema.Web.Controllers
             var movie = await _moviesService.GetByIdAsync(movieId);
             var movieViewModel = _mapper.Map<MovieViewModel>(movie);
 
+            // writing variable type out explicitly, because slight refactoring is required upon introducing pagination
+            IReadOnlyCollection<Screening> screenings = await _screeningsService.GetAllAsync(movieId, from: DateTime.Today);
+            var screeningViewModels = _mapper.Map<List<ScreeningViewModel>>(screenings);
+
             return View(new MovieDetailViewModel()
             {
-                Movie = movieViewModel
+                Movie = movieViewModel,
+                Screenings = screeningViewModels
             });
         }
     }

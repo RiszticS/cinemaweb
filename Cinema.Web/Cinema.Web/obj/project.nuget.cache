@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kgWyzemvxEA=",
+  "dgSpecHash": "u3pjZFZQWns=",
   "success": true,
   "projectFilePath": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\Cinema.Web.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\RiszticS\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\RiszticS\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
@@ -26,6 +27,7 @@
     "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.14\\microsoft.entityframeworkcore.abstractions.8.0.14.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.14\\microsoft.entityframeworkcore.analyzers.8.0.14.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.14\\microsoft.entityframeworkcore.design.8.0.14.nupkg.sha512",
+    "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\8.0.14\\microsoft.entityframeworkcore.proxies.8.0.14.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.14\\microsoft.entityframeworkcore.relational.8.0.14.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.14\\microsoft.entityframeworkcore.sqlserver.8.0.14.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.14\\microsoft.entityframeworkcore.tools.8.0.14.nupkg.sha512",

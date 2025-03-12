@@ -29,5 +29,7 @@ namespace Cinema.DataAccess.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime? DeletedAt { get; set; }
+
+        public virtual ICollection<Screening> Screenings { get; set; } = [];
     }
 }

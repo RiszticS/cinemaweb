@@ -1,4 +1,5 @@
 using Cinema.DataAccess.Models;
+using Cinema.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cinema.DataAccess;
@@ -11,7 +12,7 @@ public static class DbInitializer
             throw new IOException("Image path does not exists");
 
         context.Database.Migrate();
-        
+
 
         // Check if any movies already exist
         if (context.Movies.Any())
@@ -134,8 +135,53 @@ public static class DbInitializer
             },
         ];
 
-
         context.Movies.AddRange(movies);
+
+        // Rooms
+        Room[] rooms =
+        [
+            new Room { Name = "Room 1", Rows = 10, Columns = 20 }, // Room 1
+            new Room { Name = "Room 2", Rows = 15, Columns = 24 }, // Room 2
+            new Room { Name = "Room 3", Rows = 8, Columns = 12 } // Room 3
+        ];
+
+        context.Rooms.AddRange(rooms);
+
+        // Screenings
+        var screenings = new List<Screening>();
+
+        for (int delayDays = 0; delayDays < 7; ++delayDays)
+        {
+            int delayMinutes = 0;
+            foreach (var movie in movies)
+            {
+                screenings.Add(new Screening
+                {
+                    Movie = movie,
+                    Room = rooms[0], // Assign to Room 1
+                    StartsAt = DateTime.Today.AddDays(delayDays).AddHours(10).AddMinutes(delayMinutes),
+                    Price = 10.00m
+                });
+
+                delayMinutes += 190;
+            }
+
+            delayMinutes = 0;
+            foreach (var movie in movies.Reverse())
+            {
+                screenings.Add(new Screening
+                {
+                    Movie = movie,
+                    Room = rooms[1], // Assign to Room 2
+                    StartsAt = DateTime.Today.AddDays(delayDays).AddHours(11).AddMinutes(delayMinutes),
+                    Price = 12.00m
+                });
+
+                delayMinutes += 190;
+            }
+        }
+
+        context.Screenings.AddRange(screenings);
 
         // Save changes to the database
         context.SaveChanges();
