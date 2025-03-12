@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.DataAccess.Services
 {
-    interface IMoviesService
+    public interface IMoviesService
     {
         Task<IReadOnlyCollection<Movie>> GetLatestMoviesAsync(int? count = null);
 

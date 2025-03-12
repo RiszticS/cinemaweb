@@ -1,4 +1,5 @@
-﻿using Cinema.DataAccess.Exceptions;
+﻿using Cinema.DataAccess;
+using Cinema.DataAccess.Exceptions;
 using Cinema.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,12 +33,13 @@ namespace Cinema.DataAccess.Services
 
             return await _context.Movies.FromSql(
                 $"""
-             SELECT TOP ({count.Value})
-             Id, Title, Year, Director, Synopsis, Length, Image, CreatedAt, DeletedAt
-             FROM Movies
-             WHERE DeletedAt is null
-             ORDER BY CreatedAt DESC
-             """
+                SELECT
+                Id, Title, Year, Director, Synopsis, Length, Image, CreatedAt, DeletedAt
+                FROM Movies
+                WHERE DeletedAt is null
+                ORDER BY CreatedAt DESC
+                LIMIT {count.Value}
+                """
             ).ToListAsync();
         }
 

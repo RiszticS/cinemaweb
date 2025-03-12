@@ -1,26 +1,35 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
+using Cinema.DataAccess.Services;
 using Cinema.Web.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Cinema.Web.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly IMoviesService _moviesService;
+    private readonly IMapper _mapper;
+    private readonly IConfiguration _configuration;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IMoviesService moviesService, IMapper mapper, IConfiguration configuration)
     {
-        _logger = logger;
+        _moviesService = moviesService;
+        _mapper = mapper;
+        _configuration = configuration;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
-    }
+        var lastestMovies = await _moviesService.GetLatestMoviesAsync(int.Parse(_configuration["NewMovieCount"]!));
+        var lastestMoviesViewModels = _mapper.Map<List<MovieViewModel>>(lastestMovies);
 
-    public IActionResult Privacy()
-    {
-        return View();
+        var homePageViewModel = new HomePageViewModel()
+        {
+            LatestMovies = lastestMoviesViewModels
+        };
+
+        return View(homePageViewModel);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
