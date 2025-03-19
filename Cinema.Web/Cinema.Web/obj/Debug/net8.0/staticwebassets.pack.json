@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\js\\reservation.js",
+      "PackagePath": "staticwebassets\\js\\reservation.js"
+    },
+    {
       "Id": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

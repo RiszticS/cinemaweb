@@ -1,5 +1,5 @@
 ﻿@using Cinema.Web.Utility
-@model MovieDetailViewModel
+@model Cinema.Web.Models.MovieDetailViewModel
 
 
 <div class="row">
@@ -22,7 +22,8 @@
         @{
             var viewData = new ViewDataDictionary(this.ViewData)
         {
-        { "showMovieDetails", false }
+        { "showMovieDetails", false },
+        { "showReservationLink", true}  // Config ViewData
         };
 
             foreach (var screening in Model.Screenings)

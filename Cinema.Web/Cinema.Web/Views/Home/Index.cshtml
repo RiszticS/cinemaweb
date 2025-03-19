@@ -13,10 +13,7 @@
                 <img class="card-img-top" src="@movie.Image.ToImgSrc()" alt="@movie.Title" />
                 <div class="card-body">
                     <h5 class="card-title">
-                        <a class="stretched-link text-dark text-underline-hover"
-                           asp-action="Details"
-                           asp-controller="Movie"
-                           asp-route-movieId="@movie.Id">@movie.Title</a>
+                        <a class="stretched-link text-dark text-underline-hover" asp-action="Details" asp-controller="Movie" asp-route-movieId="@movie.Id">@movie.Title</a>
                     </h5>
                 </div>
             </div>
@@ -37,6 +34,7 @@ else
     var viewData = new ViewDataDictionary(this.ViewData)
     {
         { "showMovieDetails", true },
+        { "showReservationLink", true}  // config ViewData
     };
 
     foreach (var screening in Model.TodayScreenings)

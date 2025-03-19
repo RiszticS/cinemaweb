@@ -2,6 +2,7 @@
 
 @{
     bool showMovieDetails = ViewData["showMovieDetails"] != null && (bool)ViewData["showMovieDetails"]!;
+    bool showReservationLink = ViewData["showReservationLink"] != null && (bool)ViewData["showReservationLink"]!;
 }
 
 <div class="card my-3">
@@ -25,4 +26,11 @@
             <li><strong>Price per ticket:</strong> @Model.Price</li>
         </ul>
     </div>
+
+    @if (showReservationLink)
+    {
+        <div class="card-footer">
+            <a class="btn btn-primary" asp-controller="Reservation" asp-action="Index" asp-route-screeningId="@Model.Id">Reserve</a>
+        </div>
+    }
 </div>

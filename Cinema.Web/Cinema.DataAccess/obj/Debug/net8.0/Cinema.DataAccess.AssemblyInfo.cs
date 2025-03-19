@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cinema.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbac6245a16b6c20667c48e691ee1641484a1ee3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+983ee737907ce2ef844728fffa47655c35297806")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cinema.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cinema.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

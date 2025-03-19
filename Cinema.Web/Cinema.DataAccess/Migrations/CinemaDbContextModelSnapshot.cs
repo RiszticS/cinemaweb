@@ -68,6 +68,40 @@ namespace Cinema.DataAccess.Migrations
                     b.ToTable("Movies");
                 });
 
+            modelBuilder.Entity("Cinema.DataAccess.Models.Reservation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Reservations");
+                });
+
             modelBuilder.Entity("Cinema.DataAccess.Models.Room", b =>
                 {
                     b.Property<int>("Id")
@@ -130,6 +164,32 @@ namespace Cinema.DataAccess.Migrations
                     b.ToTable("Screenings");
                 });
 
+            modelBuilder.Entity("Cinema.DataAccess.Models.Seat", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ReservationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ScreeningId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReservationId");
+
+                    b.HasIndex("ScreeningId");
+
+                    b.ToTable("Seats");
+                });
+
             modelBuilder.Entity("Cinema.DataAccess.Models.Screening", b =>
                 {
                     b.HasOne("Cinema.DataAccess.Models.Movie", "Movie")
@@ -149,14 +209,64 @@ namespace Cinema.DataAccess.Migrations
                     b.Navigation("Room");
                 });
 
+            modelBuilder.Entity("Cinema.DataAccess.Models.Seat", b =>
+                {
+                    b.HasOne("Cinema.DataAccess.Models.Reservation", "Reservation")
+                        .WithMany("Seats")
+                        .HasForeignKey("ReservationId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Cinema.DataAccess.Models.Screening", "Screening")
+                        .WithMany("Seats")
+                        .HasForeignKey("ScreeningId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Cinema.DataAccess.Models.SeatPosition", "Position", b1 =>
+                        {
+                            b1.Property<int>("SeatId")
+                                .HasColumnType("int");
+
+                            b1.Property<int>("Column")
+                                .HasColumnType("int");
+
+                            b1.Property<int>("Row")
+                                .HasColumnType("int");
+
+                            b1.HasKey("SeatId");
+
+                            b1.ToTable("Seats");
+
+                            b1.WithOwner()
+                                .HasForeignKey("SeatId");
+                        });
+
+                    b.Navigation("Position")
+                        .IsRequired();
+
+                    b.Navigation("Reservation");
+
+                    b.Navigation("Screening");
+                });
+
             modelBuilder.Entity("Cinema.DataAccess.Models.Movie", b =>
                 {
                     b.Navigation("Screenings");
                 });
 
+            modelBuilder.Entity("Cinema.DataAccess.Models.Reservation", b =>
+                {
+                    b.Navigation("Seats");
+                });
+
             modelBuilder.Entity("Cinema.DataAccess.Models.Room", b =>
                 {
                     b.Navigation("Screenings");
+                });
+
+            modelBuilder.Entity("Cinema.DataAccess.Models.Screening", b =>
+                {
+                    b.Navigation("Seats");
                 });
 #pragma warning restore 612, 618
         }

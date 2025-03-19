@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rmT5wyUAx3hCSFrBGR+LSDtFHftDbxSJ9Ieg9SET3WI=",
+  "Hash": "GMIfXmO7o8FN+30C9BtZi8S6FsUiYlhgqqKpYOj4xU0=",
   "Source": "Cinema.Web",
   "BasePath": "_content/Cinema.Web",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\js\\reservation.js",
+      "SourceId": "Cinema.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\",
+      "BasePath": "_content/Cinema.Web",
+      "RelativePath": "js/reservation#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6g6ata1uki",
+      "Integrity": "2oswoxL0BqXpevX75fmMXNmhDC1pMKizLbtpu2Bv210=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\reservation.js"
     },
     {
       "Identity": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\js\\site.js",
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/reservation.6g6ata1uki.js",
+      "AssetFile": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\js\\reservation.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2oswoxL0BqXpevX75fmMXNmhDC1pMKizLbtpu2Bv210=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 12:09:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6g6ata1uki"
+        },
+        {
+          "Name": "label",
+          "Value": "js/reservation.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2oswoxL0BqXpevX75fmMXNmhDC1pMKizLbtpu2Bv210="
+        }
+      ]
+    },
+    {
+      "Route": "js/reservation.js",
+      "AssetFile": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\wwwroot\\js\\reservation.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2oswoxL0BqXpevX75fmMXNmhDC1pMKizLbtpu2Bv210=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 12:09:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2oswoxL0BqXpevX75fmMXNmhDC1pMKizLbtpu2Bv210="
         }
       ]
     },
