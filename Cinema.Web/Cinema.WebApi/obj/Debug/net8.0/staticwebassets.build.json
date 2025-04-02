@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LFhPGHlWomJMxmJ8nDv0GKZxVFW9O+HsK1Br74cRt/k=",
+  "Source": "Cinema.WebAPI",
+  "BasePath": "_content/Cinema.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

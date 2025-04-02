@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cinema.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:Cinema.WebAPI.Controllers.MoviesController">
+            <summary>
+            MoviesController
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.MoviesController.#ctor(AutoMapper.IMapper,Cinema.DataAccess.Services.IMoviesService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="moviesService"></param>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.MoviesController.GetMovies(System.Nullable{System.Int32})">
+            <summary>
+            Get all movies in descending order by creation date
+            </summary>
+            <param name="count">An optional parameter to restrict the number of the returned movies</param>
+            <response code="200">A list of movies</response>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.MoviesController.GetMovieById(System.Int32)">
+            <summary>
+            Get a movie by ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">The requested movie</response>
+            <response code="404">Not found</response>
+        </member>
+        <member name="T:Cinema.WebAPI.Controllers.ReservationsController">
+            <summary>
+            ReservationsController
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.ReservationsController.#ctor(AutoMapper.IMapper,Cinema.DataAccess.Services.IReservationsService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="reservationsService"></param>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.ReservationsController.CreateReservation(Cinema.Shared.Models.ReservationRequestDto)">
+            <summary>
+            Add a new reservation
+            </summary>
+            <param name="reservationRequestDto"></param>
+            <response code="201">Reservation created successfully</response>
+            <response code="400">Bad Request</response>
+            <response code="409">Conflict</response>
+        </member>
+        <member name="T:Cinema.WebAPI.Controllers.RoomsController">
+            <summary>
+            RoomsController
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.RoomsController.#ctor(AutoMapper.IMapper,Cinema.DataAccess.Services.IRoomsService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="roomsService"></param>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.RoomsController.GetRooms">
+            <summary>
+            Get all rooms
+            </summary>
+            <response code="200">A list of rooms</response>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.RoomsController.GetRoomById(System.Int32)">
+            <summary>
+            Get a room by ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">The requested room</response>
+            <response code="404">Not found</response>
+        </member>
+        <member name="T:Cinema.WebAPI.Controllers.ScreeningsController">
+            <summary>
+            ScreeningsController
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.ScreeningsController.#ctor(AutoMapper.IMapper,Cinema.DataAccess.Services.IScreeningsService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="screeningsService"></param>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.ScreeningsController.GetScreenings(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Get all screenings
+            </summary>
+            <param name="movieId"></param>
+            <param name="roomId"></param>
+            <param name="startsAfter"></param>
+            <param name="startsBefore"></param>
+            <response code="200">A list of screenings</response>
+            <response code="400">Bad Request</response>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.ScreeningsController.GetScreeningById(System.Int32)">
+            <summary>
+            Get a screening by ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">The requested screening</response>
+            <response code="404">Not found</response>
+        </member>
+        <member name="M:Cinema.WebAPI.Controllers.ScreeningsController.GetSeatsByScreening(System.Int32)">
+            <summary>
+            Get all reserved/sold seats for the given screening
+            </summary>
+            <param name="id"></param>
+            <response code="200">A list of seats</response>
+            <response code="404">Not found</response>
+        </member>
+        <member name="T:Cinema.WebAPI.Infrastructure.DependencyInjection">
+            <summary>
+            DependencyInjection
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Infrastructure.DependencyInjection.AddAutomapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            AddAutomapper
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cinema.WebAPI.Infrastructure.ExceptionToProblemDetailsHandler">
+            <summary>
+            ExceptionToProblemDetailsHandler
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Infrastructure.ExceptionToProblemDetailsHandler.#ctor(Microsoft.AspNetCore.Http.IProblemDetailsService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="problemDetailsService"></param>
+        </member>
+        <member name="M:Cinema.WebAPI.Infrastructure.ExceptionToProblemDetailsHandler.TryHandleAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception,System.Threading.CancellationToken)">
+            <summary>
+            Map the exceptions to status codes and create problemDetails
+            </summary>
+            <param name="httpContext"></param>
+            <param name="exception"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cinema.WebAPI.Infrastructure.MappingProfile">
+            <summary>
+            Automapper mappingProfile
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Infrastructure.MappingProfile.#ctor">
+            <summary>
+            Constructor - Define mapping rules here
+            </summary>
+        </member>
+        <member name="T:Cinema.WebAPI.Infrastructure.SeatResolver">
+            <summary>
+            SeatResolver
+            </summary>
+        </member>
+        <member name="M:Cinema.WebAPI.Infrastructure.SeatResolver.Resolve(Cinema.Shared.Models.ReservationRequestDto,Cinema.DataAccess.Models.Reservation,System.Collections.Generic.ICollection{Cinema.DataAccess.Models.Seat},AutoMapper.ResolutionContext)">
+            <summary>
+            Resolve
+            </summary>
+            <param name="source"></param>
+            <param name="destination"></param>
+            <param name="members"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

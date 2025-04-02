@@ -1,5 +1,7 @@
 using Cinema.DataAccess.Exceptions;
 using Cinema.DataAccess.Models;
+using Cinema.DataAccess.Services;
+using Cinema.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cinema.DataAccess.Services;
@@ -15,10 +17,10 @@ public class ScreeningsService : IScreeningsService
 
     public async Task<IReadOnlyCollection<Screening>> GetForDateAsync(DateTime date)
     {
-       return await _context.Screenings
-            .Where(s => s.StartsAt.Date == date.Date)
-            .OrderBy(s => s.StartsAt)
-            .ToListAsync();
+        return await _context.Screenings
+             .Where(s => s.StartsAt.Date == date.Date)
+             .OrderBy(s => s.StartsAt)
+             .ToListAsync();
     }
 
     public async Task<Screening> GetByIdAsync(int id)
@@ -50,5 +52,14 @@ public class ScreeningsService : IScreeningsService
             .OrderBy(s => s.StartsAt);
 
         return await query.ToListAsync();
+    }
+
+    public async Task<List<Seat>> GetSeatsByScreeningAsync(int id)
+    {
+        var seats = await _context.Seats
+            .Where(s => s.ScreeningId == id)
+            .ToListAsync();
+
+        return seats;
     }
 }

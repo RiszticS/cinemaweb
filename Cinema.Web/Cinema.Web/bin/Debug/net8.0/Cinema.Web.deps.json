@@ -1101,6 +1101,7 @@
       },
       "Cinema.DataAccess/1.0.0": {
         "dependencies": {
+          "AutoMapper": "14.0.0",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",

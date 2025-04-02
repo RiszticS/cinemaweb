@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cltjqmn4DTs=",
+  "dgSpecHash": "YHN1iq/kY4o=",
   "success": true,
   "projectFilePath": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. félév\\Modern webalkalmazások fejlesztése .NET környezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\RiszticS\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\RiszticS\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
