@@ -1,17 +1,19 @@
+using Cinema.DataAccess;
 using Cinema.DataAccess.Config;
 using Cinema.DataAccess.Exceptions;
 using Cinema.DataAccess.Models;
 using Cinema.DataAccess.Services;
-using Cinema.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Moq;
+
 namespace Cinema.Tests.UnitTests;
 
 public class ReservationsServiceTests : IDisposable
 {
     private readonly CinemaDbContext _context;
     private readonly ReservationsService _reservationsService;
+    private readonly Mock<IUsersService> _mockUserService;
 
     public ReservationsServiceTests()
     {
@@ -21,6 +23,7 @@ public class ReservationsServiceTests : IDisposable
             .Options;
 
         _context = new CinemaDbContext(options);
+        _mockUserService = new Mock<IUsersService>();
 
         // Configure ReservationSettings
         var reservationSettings = Options.Create(new ReservationSettings
@@ -35,7 +38,8 @@ public class ReservationsServiceTests : IDisposable
         _reservationsService = new ReservationsService(
             _context,
             reservationSettings,
-            mockEmailService.Object);
+            mockEmailService.Object,
+            _mockUserService.Object);
 
         SeedDatabase();
     }

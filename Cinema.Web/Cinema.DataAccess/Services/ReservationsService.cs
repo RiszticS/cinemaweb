@@ -13,15 +13,37 @@ public class ReservationsService : IReservationsService
     private readonly CinemaDbContext _context;
     private readonly ReservationSettings _reservationSettings;
     private readonly IEmailsService _emailsService;
+    private readonly IUsersService _usersService;
 
     public ReservationsService(
         CinemaDbContext context,
         IOptions<ReservationSettings> reservationSettings,
-        IEmailsService emailsService)
+        IEmailsService emailsService,
+        IUsersService usersService)
     {
         _context = context;
         _reservationSettings = reservationSettings.Value;
         _emailsService = emailsService;
+        _usersService = usersService;
+    }
+
+    public async Task<List<Reservation>> GetAllReservationsAsync()
+    {
+        var reservations = _context.Reservations
+            .Where(r => _usersService.IsCurrentUserAdmin() || r.UserId == _usersService.GetCurrentUserId());
+
+        return await reservations.ToListAsync();
+    }
+
+    public async Task<Reservation> GetByIdAsync(int id)
+    {
+        var reservation = await _context.Reservations.FindAsync(id);
+        if (reservation is null)
+            throw new EntityNotFoundException(nameof(Reservation));
+
+        CheckUserReservation(reservation);
+
+        return reservation;
     }
 
     public async Task AddAsync(long screeningId, Reservation reservation)
@@ -45,6 +67,7 @@ public class ReservationsService : IReservationsService
             throw new EntityNotFoundException(nameof(Screening));
 
         reservation.CreatedAt = DateTime.UtcNow;
+        reservation.UserId = _usersService.GetCurrentUserId();
 
         foreach (var seat in reservation.Seats)
         {
@@ -80,6 +103,29 @@ public class ReservationsService : IReservationsService
         }
     }
 
+    public async Task CancelAsync(int id)
+    {
+        var reservation = await GetByIdAsync(id);
+
+        CheckUserReservation(reservation);
+
+        if (reservation.Seats.First().Screening.StartsAt < DateTime.Now)
+        {
+            throw new InvalidDataException("Cannot cancel reservation for a past screening date.");
+        }
+
+        try
+        {
+            // The seats will be also deleted. See CinemaDbContext.OnModelCreating for the cascading configuration.
+            _context.Reservations.Remove(reservation);
+            await _context.SaveChangesAsync();
+        }
+        catch (DbUpdateException ex)
+        {
+            throw new SaveFailedException("Failed to cancel reservation", ex);
+        }
+    }
+
     private static string GenerateEmailBody(Screening screening, Reservation reservation)
     {
         return $"""
@@ -105,5 +151,10 @@ public class ReservationsService : IReservationsService
     </tr>
 </table>
 """;
+    }
+    private void CheckUserReservation(Reservation reservation)
+    {
+        if (!_usersService.IsCurrentUserAdmin() && reservation.UserId != _usersService.GetCurrentUserId())
+            throw new AccessViolationException("Reservation is not accessible");
     }
 }

@@ -1,9 +1,10 @@
 using Cinema.DataAccess.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cinema.DataAccess;
 
-public class CinemaDbContext : DbContext
+public class CinemaDbContext : IdentityDbContext<User, UserRole, string>
 {
     public DbSet<Movie> Movies { get; set; } = null!;
     public DbSet<Room> Rooms { get; set; } = null!;

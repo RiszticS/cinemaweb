@@ -1,17 +1,28 @@
 using Cinema.DataAccess.Models;
 using Cinema.DataAccess;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cinema.DataAccess;
 
 public static class DbInitializer
 {
-    public static void Initialize(CinemaDbContext context, string imagePath)
+    public static void Initialize(CinemaDbContext context, string imagePath, RoleManager<UserRole>? roleManager = null, UserManager<User>? userManager = null)
     {
         if (!Path.Exists(imagePath))
             throw new IOException("Image path does not exists");
 
         context.Database.Migrate();
+
+        if (roleManager != null)
+        {
+            SeedRolesAsync(roleManager).Wait();
+        }
+
+        if (userManager != null)
+        {
+            SeedUsersAsync(userManager).Wait();
+        }
 
 
         // Check if any movies already exist
@@ -185,5 +196,35 @@ public static class DbInitializer
 
         // Save changes to the database
         context.SaveChanges();
+    }
+
+    private static async Task SeedRolesAsync(RoleManager<UserRole> roleManager)
+    {
+        string[] roleNames = ["Admin"];
+
+        foreach (var roleName in roleNames)
+        {
+            var roleExist = await roleManager.RoleExistsAsync(roleName);
+            if (!roleExist)
+            {
+                // Create the roles and seed them to the database
+                await roleManager.CreateAsync(new UserRole(roleName));
+            }
+        }
+    }
+
+    private static async Task SeedUsersAsync(UserManager<User> userManager)
+    {
+        // Example to seed an Admin user
+        const string adminEmail = "admin@example.com";
+        const string adminPassword = "Admin@123";
+
+        var adminUser = await userManager.FindByEmailAsync(adminEmail);
+        if (adminUser == null)
+        {
+            adminUser = new User { UserName = adminEmail, Email = adminEmail, Name = "Test Admin" };
+            await userManager.CreateAsync(adminUser, adminPassword);
+            await userManager.AddToRoleAsync(adminUser, "Admin");
+        }
     }
 }

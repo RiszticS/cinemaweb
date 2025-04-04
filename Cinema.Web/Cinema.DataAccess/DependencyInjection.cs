@@ -1,5 +1,7 @@
 ﻿using Cinema.DataAccess.Config;
+using Cinema.DataAccess.Models;
 using Cinema.DataAccess.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,12 +23,28 @@ public static class DependencyInjection
             .UseLazyLoadingProxies()
         );
 
+        //Identity
+        services.AddIdentity<User, UserRole>(options =>
+        {
+            // Password settings.
+            options.Password.RequiredLength = 6;
+
+            // Lockout settings.
+            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+            options.Lockout.MaxFailedAccessAttempts = 5;
+            options.Lockout.AllowedForNewUsers = true;
+            options.User.RequireUniqueEmail = true;
+        })
+            .AddEntityFrameworkStores<CinemaDbContext>()
+            .AddDefaultTokenProviders();
+
         // Services
         services.AddScoped<IMoviesService, MoviesService>();
         // services.AddScoped<IMoviesService, MoviesSqlService>();
         services.AddScoped<IRoomsService, RoomsService>();
         services.AddScoped<IScreeningsService, ScreeningsService>();
         services.AddScoped<IReservationsService, ReservationsService>();
+        services.AddScoped<IUsersService, UsersService>();
 
         // Add email sending service
         services.AddSingleton<IEmailsService, SmtpEmailsService>();
