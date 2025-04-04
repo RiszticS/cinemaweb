@@ -174,5 +174,10 @@
             <param name="context"></param>
             <returns></returns>
         </member>
+        <member name="T:Cinema.WebAPI.Program">
+            <summary>
+            Required because of Minimal API design for unit testing
+            </summary>
+        </member>
     </members>
 </doc>

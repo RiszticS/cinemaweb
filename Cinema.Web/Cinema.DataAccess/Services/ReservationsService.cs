@@ -2,12 +2,13 @@ using Cinema.DataAccess.Config;
 using Cinema.DataAccess.Exceptions;
 using Cinema.DataAccess.Models;
 using Cinema.DataAccess.Services;
+using Cinema.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
 namespace Cinema.DataAccess.Services;
 
-internal class ReservationsService : IReservationsService
+public class ReservationsService : IReservationsService
 {
     private readonly CinemaDbContext _context;
     private readonly ReservationSettings _reservationSettings;

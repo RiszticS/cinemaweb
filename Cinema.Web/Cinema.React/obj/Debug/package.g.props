@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">elte-cinema-react</PackageJsonName>
+    <PackageJsonPrivate Condition="$(PackageJsonPrivate) == ''">true</PackageJsonPrivate>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.0.0</PackageJsonVersion>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonAuthor Condition="$(PackageJsonAuthor) == ''">Eötvös Loránd University (ELTE), Faculty of Informatics</PackageJsonAuthor>
+    <PackageJsonContributors Condition="$(PackageJsonContributors) == ''">[
+  "M\u00E1t\u00E9 Cser\u00E9p",
+  "Zsombor Hartmann",
+  "P\u00E9ter Kaszab",
+  "Rox\u00E1na Provender"
+]</PackageJsonContributors>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite</PackageJsonScriptsDev>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">tsc -b &amp;&amp; vite build</PackageJsonScriptsBuild>
+    <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
+    <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.3</PackageJsonDependenciesBootstrap>
+    <PackageJsonDependenciesNpm Condition="$(PackageJsonDependenciesNpm) == ''">^11.2.0</PackageJsonDependenciesNpm>
+    <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.0.0</PackageJsonDependenciesReact>
+    <PackageJsonDependenciesReactBootstrap Condition="$(PackageJsonDependenciesReactBootstrap) == ''">^2.10.5</PackageJsonDependenciesReactBootstrap>
+    <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.0.0</PackageJsonDependenciesReactDom>
+    <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.0.2</PackageJsonDependenciesReactRouterDom>
+    <PackageJsonDependenciesYup Condition="$(PackageJsonDependenciesYup) == ''">^1.4.0</PackageJsonDependenciesYup>
+    <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.11.1</PackageJsonDevdependenciesEslintJs>
+    <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^19.0.1</PackageJsonDevdependenciesTypesReact>
+    <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^19.0.2</PackageJsonDevdependenciesTypesReactDom>
+    <PackageJsonDevdependenciesVitejsPluginReact Condition="$(PackageJsonDevdependenciesVitejsPluginReact) == ''">^4.3.2</PackageJsonDevdependenciesVitejsPluginReact>
+    <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^9.11.1</PackageJsonDevdependenciesEslint>
+    <PackageJsonDevdependenciesEslintPluginReactHooks Condition="$(PackageJsonDevdependenciesEslintPluginReactHooks) == ''">^5.1.0-rc.0</PackageJsonDevdependenciesEslintPluginReactHooks>
+    <PackageJsonDevdependenciesEslintPluginReactRefresh Condition="$(PackageJsonDevdependenciesEslintPluginReactRefresh) == ''">^0.4.12</PackageJsonDevdependenciesEslintPluginReactRefresh>
+    <PackageJsonDevdependenciesGlobals Condition="$(PackageJsonDevdependenciesGlobals) == ''">^15.9.0</PackageJsonDevdependenciesGlobals>
+    <PackageJsonDevdependenciesTypescript Condition="$(PackageJsonDevdependenciesTypescript) == ''">^5.5.3</PackageJsonDevdependenciesTypescript>
+    <PackageJsonDevdependenciesTypescriptEslint Condition="$(PackageJsonDevdependenciesTypescriptEslint) == ''">^8.7.0</PackageJsonDevdependenciesTypescriptEslint>
+    <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^6.0.1</PackageJsonDevdependenciesVite>
+  </PropertyGroup>
+</Project>

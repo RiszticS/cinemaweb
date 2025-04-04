@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.WebAPI", "Cinema.Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Shared", "Cinema.Shared\Cinema.Shared.csproj", "{2B6ED3EB-1439-4C65-834E-616F917B9FD7}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "cinema.react", "Cinema.React\cinema.react.esproj", "{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Tests", "Cinema.Tests\Cinema.Tests.csproj", "{231420B2-E5EA-E0FA-0A16-78271024A27F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,16 @@ Global
 		{2B6ED3EB-1439-4C65-834E-616F917B9FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B6ED3EB-1439-4C65-834E-616F917B9FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B6ED3EB-1439-4C65-834E-616F917B9FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{231420B2-E5EA-E0FA-0A16-78271024A27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231420B2-E5EA-E0FA-0A16-78271024A27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231420B2-E5EA-E0FA-0A16-78271024A27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231420B2-E5EA-E0FA-0A16-78271024A27F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

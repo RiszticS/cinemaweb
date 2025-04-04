@@ -3,52 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.dataaccess\\services\\reservationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|solutionrelative:cinema.dataaccess\\services\\reservationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.tests\\unittests\\reservationservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|solutionrelative:cinema.tests\\unittests\\reservationservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.react\\cinema.react.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|solutionrelative:cinema.react\\cinema.react.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.tests\\integrationtests\\moviescontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|solutionrelative:cinema.tests\\integrationtests\\moviescontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.tests\\cinema.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|solutionrelative:cinema.tests\\cinema.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.tests\\controllertests\\screeningscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{231420B2-E5EA-E0FA-0A16-78271024A27F}|Cinema.Tests\\Cinema.Tests.csproj|solutionrelative:cinema.tests\\controllertests\\screeningscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.dataaccess\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|solutionrelative:cinema.dataaccess\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D11F5A-9610-4559-8950-6119D4F66B16}|Cinema.Web\\Cinema.Web.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.web\\cinema.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6D11F5A-9610-4559-8950-6119D4F66B16}|Cinema.Web\\Cinema.Web.csproj|solutionrelative:cinema.web\\cinema.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\program.unittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\program.unittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\cinema.webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\cinema.webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.dataaccess\\services\\screeningsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|solutionrelative:cinema.dataaccess\\services\\screeningsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.react\\src\\api\\client\\screenings-client.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|solutionrelative:cinema.react\\src\\api\\client\\screenings-client.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.dataaccess\\services\\iscreeningsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8644C93-62A1-4EDC-ADAE-225C01E2828D}|Cinema.DataAccess\\Cinema.DataAccess.csproj|solutionrelative:cinema.dataaccess\\services\\iscreeningsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.react\\src\\api\\client\\movies-client.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|solutionrelative:cinema.react\\src\\api\\client\\movies-client.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\controllers\\screeningscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\controllers\\screeningscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.react\\tsconfig.app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|solutionrelative:cinema.react\\tsconfig.app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.shared\\models\\seatstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|solutionrelative:cinema.shared\\models\\seatstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.react\\src\\api\\client\\http.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|solutionrelative:cinema.react\\src\\api\\client\\http.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.shared\\models\\seatresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|solutionrelative:cinema.shared\\models\\seatresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.react\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C0E0FD32-48E5-EB51-99F3-E0475BB15FC1}|Cinema.React\\cinema.react.esproj|solutionrelative:cinema.react\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.shared\\models\\reservationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|solutionrelative:cinema.shared\\models\\reservationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.shared\\models\\reservationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|solutionrelative:cinema.shared\\models\\reservationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.shared\\models\\seatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6ED3EB-1439-4C65-834E-616F917B9FD7}|Cinema.Shared\\Cinema.Shared.csproj|solutionrelative:cinema.shared\\models\\seatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|c:\\users\\risztics\\desktop\\elte vi. f\u00E9l\u00E9v\\modern webalkalmaz\u00E1sok fejleszt\u00E9se .net k\u00F6rnyezetben\\cinemaweb\\cinema.web\\cinema.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D4E0AB3E-AF84-43E2-88AF-EB455C6425B4}|Cinema.WebApi\\Cinema.WebAPI.csproj|solutionrelative:cinema.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,24 +78,203 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoviesControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\IntegrationTests\\MoviesControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "Cinema.Tests\\IntegrationTests\\MoviesControllerIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\IntegrationTests\\MoviesControllerIntegrationTests.cs",
+              "RelativeToolTip": "Cinema.Tests\\IntegrationTests\\MoviesControllerIntegrationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:30:45.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cinema.react.esproj",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\cinema.react.esproj",
+              "RelativeDocumentMoniker": "Cinema.React\\cinema.react.esproj",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\cinema.react.esproj",
+              "RelativeToolTip": "Cinema.React\\cinema.react.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-02T12:43:52.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Cinema.WebApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Cinema.WebApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-02T07:30:55.682Z",
+              "Title": "ReservationsService.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Services\\ReservationsService.cs",
+              "RelativeDocumentMoniker": "Cinema.DataAccess\\Services\\ReservationsService.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Services\\ReservationsService.cs",
+              "RelativeToolTip": "Cinema.DataAccess\\Services\\ReservationsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:35:31.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ReservationServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\UnitTests\\ReservationServiceTest.cs",
+              "RelativeDocumentMoniker": "Cinema.Tests\\UnitTests\\ReservationServiceTest.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\UnitTests\\ReservationServiceTest.cs",
+              "RelativeToolTip": "Cinema.Tests\\UnitTests\\ReservationServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:31:36.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cinema.Tests",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\Cinema.Tests.csproj",
+              "RelativeDocumentMoniker": "Cinema.Tests\\Cinema.Tests.csproj",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\Cinema.Tests.csproj",
+              "RelativeToolTip": "Cinema.Tests\\Cinema.Tests.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-04T13:32:04.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScreeningsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\ControllerTests\\ScreeningsControllerTests.cs",
+              "RelativeDocumentMoniker": "Cinema.Tests\\ControllerTests\\ScreeningsControllerTests.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Tests\\ControllerTests\\ScreeningsControllerTests.cs",
+              "RelativeToolTip": "Cinema.Tests\\ControllerTests\\ScreeningsControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:30:49.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Cinema.DataAccess\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\DbInitializer.cs",
+              "RelativeToolTip": "Cinema.DataAccess\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T14:00:55.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cinema.Web",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\Cinema.Web.csproj",
+              "RelativeDocumentMoniker": "Cinema.Web\\Cinema.Web.csproj",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Web\\Cinema.Web.csproj",
+              "RelativeToolTip": "Cinema.Web\\Cinema.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-04T13:45:45.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.UnitTests.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Program.UnitTests.cs",
+              "RelativeDocumentMoniker": "Cinema.WebApi\\Program.UnitTests.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Program.UnitTests.cs",
+              "RelativeToolTip": "Cinema.WebApi\\Program.UnitTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:44:49.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Cinema.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Program.cs",
+              "RelativeToolTip": "Cinema.WebApi\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:41:32.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cinema.WebApi.http",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Cinema.WebApi.http",
+              "RelativeDocumentMoniker": "Cinema.WebApi\\Cinema.WebApi.http",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Cinema.WebApi.http",
+              "RelativeToolTip": "Cinema.WebApi\\Cinema.WebApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-02T12:52:21.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "screenings-client.ts",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\src\\api\\client\\screenings-client.ts",
+              "RelativeDocumentMoniker": "Cinema.React\\src\\api\\client\\screenings-client.ts",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\src\\api\\client\\screenings-client.ts",
+              "RelativeToolTip": "Cinema.React\\src\\api\\client\\screenings-client.ts",
+              "ViewState": "AgIAAA8AAADgzMzMzAwswAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-02T13:30:29.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "movies-client.ts",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\src\\api\\client\\movies-client.ts",
+              "RelativeDocumentMoniker": "Cinema.React\\src\\api\\client\\movies-client.ts",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\src\\api\\client\\movies-client.ts",
+              "RelativeToolTip": "Cinema.React\\src\\api\\client\\movies-client.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-02T13:30:23.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "tsconfig.app.json",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\tsconfig.app.json",
+              "RelativeDocumentMoniker": "Cinema.React\\tsconfig.app.json",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\tsconfig.app.json",
+              "RelativeToolTip": "Cinema.React\\tsconfig.app.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAlwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-02T13:29:42.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "http.ts",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\src\\api\\client\\http.ts",
+              "RelativeDocumentMoniker": "Cinema.React\\src\\api\\client\\http.ts",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\src\\api\\client\\http.ts",
+              "RelativeToolTip": "Cinema.React\\src\\api\\client\\http.ts",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-02T13:27:11.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "Cinema.WebApi\\appsettings.json",
@@ -83,127 +282,19 @@
               "RelativeToolTip": "Cinema.WebApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-02T07:30:48.396Z"
+              "WhenOpened": "2025-04-02T12:52:16.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ScreeningsService.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Services\\ScreeningsService.cs",
-              "RelativeDocumentMoniker": "Cinema.DataAccess\\Services\\ScreeningsService.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Services\\ScreeningsService.cs",
-              "RelativeToolTip": "Cinema.DataAccess\\Services\\ScreeningsService.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAuwAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:22:07.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IScreeningsService.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Services\\IScreeningsService.cs",
-              "RelativeDocumentMoniker": "Cinema.DataAccess\\Services\\IScreeningsService.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.DataAccess\\Services\\IScreeningsService.cs",
-              "RelativeToolTip": "Cinema.DataAccess\\Services\\IScreeningsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:20:11.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SeatStatusDto.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\SeatStatusDto.cs",
-              "RelativeDocumentMoniker": "Cinema.Shared\\Models\\SeatStatusDto.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\SeatStatusDto.cs",
-              "RelativeToolTip": "Cinema.Shared\\Models\\SeatStatusDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:19:29.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ScreeningsController.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Controllers\\ScreeningsController.cs",
-              "RelativeDocumentMoniker": "Cinema.WebApi\\Controllers\\ScreeningsController.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Controllers\\ScreeningsController.cs",
-              "RelativeToolTip": "Cinema.WebApi\\Controllers\\ScreeningsController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAArwE4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:17:37.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SeatResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\SeatResponseDto.cs",
-              "RelativeDocumentMoniker": "Cinema.Shared\\Models\\SeatResponseDto.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\SeatResponseDto.cs",
-              "RelativeToolTip": "Cinema.Shared\\Models\\SeatResponseDto.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA3wBkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:15:52.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReservationResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\ReservationResponseDto.cs",
-              "RelativeDocumentMoniker": "Cinema.Shared\\Models\\ReservationResponseDto.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\ReservationResponseDto.cs",
-              "RelativeToolTip": "Cinema.Shared\\Models\\ReservationResponseDto.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwAAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:15:46.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "Cinema.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Program.cs",
-              "RelativeToolTip": "Cinema.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:52:36.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReservationRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\ReservationRequestDto.cs",
-              "RelativeDocumentMoniker": "Cinema.Shared\\Models\\ReservationRequestDto.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\ReservationRequestDto.cs",
-              "RelativeToolTip": "Cinema.Shared\\Models\\ReservationRequestDto.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA5wAIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:14:57.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SeatRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\SeatRequestDto.cs",
-              "RelativeDocumentMoniker": "Cinema.Shared\\Models\\SeatRequestDto.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.Shared\\Models\\SeatRequestDto.cs",
-              "RelativeToolTip": "Cinema.Shared\\Models\\SeatRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:14:48.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReservationsController.cs",
-              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Controllers\\ReservationsController.cs",
-              "RelativeDocumentMoniker": "Cinema.WebApi\\Controllers\\ReservationsController.cs",
-              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.WebApi\\Controllers\\ReservationsController.cs",
-              "RelativeToolTip": "Cinema.WebApi\\Controllers\\ReservationsController.cs",
-              "ViewState": "AgIAAB0AAACgmZmZmZklwDEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:11:53.592Z"
+              "DocumentIndex": 15,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\vite.config.ts",
+              "RelativeDocumentMoniker": "Cinema.React\\vite.config.ts",
+              "ToolTip": "C:\\Users\\RiszticS\\Desktop\\ELTE VI. f\u00E9l\u00E9v\\Modern webalkalmaz\u00E1sok fejleszt\u00E9se .NET k\u00F6rnyezetben\\cinemaweb\\Cinema.Web\\Cinema.React\\vite.config.ts",
+              "RelativeToolTip": "Cinema.React\\vite.config.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-02T12:52:07.773Z"
             }
           ]
         }
