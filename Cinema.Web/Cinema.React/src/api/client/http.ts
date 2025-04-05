@@ -1,6 +1,7 @@
 import { ProblemDetails } from "@/api/models/ProblemDetails";
 import { HttpError } from "@/api/errors/HttpError";
 import { ServerSideValidationError } from "@/api/errors/ServerSideValidationError";
+import { UserInfo } from "@/contexts/UserContext";
 
 export async function get<TResponse>(url: string, params?: Record<string, string>) : Promise<TResponse> {
     let fullUrl = `${import.meta.env.VITE_APP_API_BASEURL}/${url}`;
@@ -11,6 +12,7 @@ export async function get<TResponse>(url: string, params?: Record<string, string
     
     const res = await fetch(fullUrl, {
         method: "GET",
+        headers: createAuthHeader()
     });
     await throwErrorIfNotOk(res);
 
@@ -23,6 +25,7 @@ export async function postAsJson<TRequest, TResponse>(url: string, body?: TReque
         body: body ? JSON.stringify(body) : undefined,
         headers: {
             "Content-Type": "application/json",
+            ...createAuthHeader()
         }
     });
     await throwErrorIfNotOk(res);
@@ -36,6 +39,7 @@ export async function postAsJsonWithoutResponse<TRequest>(url: string, body?: TR
         body: body ? JSON.stringify(body) : undefined,
         headers: {
             "Content-Type": "application/json",
+            ...createAuthHeader()
         }
     });
     await throwErrorIfNotOk(res);
@@ -44,8 +48,21 @@ export async function postAsJsonWithoutResponse<TRequest>(url: string, body?: TR
 export async function deleteResource(url: string) {
     const res = await fetch(`${import.meta.env.VITE_APP_API_BASEURL}/${url}`, {
         method: "DELETE",
+        headers: createAuthHeader()
     });
     await throwErrorIfNotOk(res);
+}
+
+function createAuthHeader() {
+    const userSessionItem = localStorage.getItem('user');
+    if (!userSessionItem) {
+        return undefined;
+    }
+    
+    const user = JSON.parse(userSessionItem) as UserInfo;
+    return {
+        "Authorization": `Bearer ${user.authToken}`,
+    };
 }
 
 async function throwErrorIfNotOk(res: Response) {

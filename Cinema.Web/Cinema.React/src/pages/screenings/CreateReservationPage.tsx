@@ -10,18 +10,22 @@ import { SeatMap, SeatMapPosition } from "@/components/screenings/SeatMap";
 import { ScreeningCard } from "@/components/screenings/ScreeningCard";
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { SeatRequestDto } from "@/api/models/SeatRequestDto";
 import * as yup from "yup";
 import { FormError } from "@/components/FormError";
 import { yupErrorsToObject } from "@/utils/forms";
 import { ServerSideValidationError } from "@/api/errors/ServerSideValidationError";
 import { HttpError } from "@/api/errors/HttpError";
-import { SeatRequestDto } from "@/api/models/SeatRequestDto";
+import { getUserById } from "@/api/client/users-client.ts";
+import { useUserContext } from "@/contexts/UserContext.ts";
+
 
 /**
  * Shows the create reservation page with a seatmap
  * @constructor
  */
 export function CreateReservationPage() {
+    const userContext = useUserContext();
     const params = useParams();
     const navigate = useNavigate();
     const screeningId = params.screeningId ? parseInt(params.screeningId) : null;
@@ -43,33 +47,36 @@ export function CreateReservationPage() {
 
     useEffect(() => {
         async function loadContent() {
-            if (!screeningId) {
+            if (!screeningId || !userContext.userId) {
                 return;
             }
-
-            setNewReservation(prevState => ({
-                ...prevState,
-                screeningId: screeningId
-            }));
 
             setError(null);
             setIsLoading(true);
             try {
-                const [loadedScreening, loadedSeats] = await Promise.all([
+                const [loadedScreening, loadedSeats, user] = await Promise.all([
                     getScreeningById(screeningId),
-                    getSeatsForScreening(screeningId)
+                    getSeatsForScreening(screeningId),
+                    getUserById(userContext.userId)
                 ]);
                 setScreening(loadedScreening);
                 setTakenSeats(loadedSeats);
+
+                setNewReservation(prevState => ({
+                    ...prevState,
+                    screeningId: screeningId,
+                    name: user.name,
+                    email: user.email,
+                    phone: user.phoneNumber,
+                }));
             } catch (e) {
                 setError(e instanceof Error ? e.message : "Unknown error.");
             } finally {
                 setIsLoading(false);
             }
         }
-
         loadContent();
-    }, [screeningId]);
+    }, [screeningId, userContext]);
 
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
         setNewReservation(prevState => ({
@@ -115,7 +122,7 @@ export function CreateReservationPage() {
             reservationRequestValidator.validate(newReservation, { abortEarly: false });
 
             await createReservation(newReservation);
-            return navigate("/", {
+            return navigate(userContext.loggedIn ? "/reservations" : "/", {
                 replace: true,
                 state: { success: "Reservation created successfully." }
             });

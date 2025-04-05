@@ -1,5 +1,5 @@
 import { ReservationRequestDto } from "@/api/models/ReservationRequestDto";
-import { get, postAsJson } from "@/api/client/http";
+import { deleteResource, get, postAsJson } from "@/api/client/http";
 import { ReservationResponseDto } from "@/api/models/ReservationResponseDto";
 
 export async function getReservations() {
@@ -8,4 +8,8 @@ export async function getReservations() {
 
 export async function createReservation(body: ReservationRequestDto): Promise<ReservationResponseDto> {
     return await postAsJson<ReservationRequestDto, ReservationResponseDto>("reservations", body);
+}
+
+export async function cancelReservation(id: number): Promise<void> {
+    await deleteResource(`reservations/${id}`);
 }

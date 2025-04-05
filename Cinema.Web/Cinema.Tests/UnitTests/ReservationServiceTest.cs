@@ -23,6 +23,8 @@ public class ReservationsServiceTests : IDisposable
             .Options;
 
         _context = new CinemaDbContext(options);
+
+        // Mock the UserService
         _mockUserService = new Mock<IUsersService>();
 
         // Configure ReservationSettings
@@ -149,6 +151,285 @@ public class ReservationsServiceTests : IDisposable
 
     #endregion
 
+    #region Get
+
+    [Fact]
+    public async Task GetAllReservationsAsync_ReturnsAllReservationsForAdmin()
+    {
+        // Arrange
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(1, 3) },
+                new Seat { Position = new SeatPosition(1, 4) }
+            }
+        };
+
+        var reservation2 = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user2",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3) },
+                new Seat { Position = new SeatPosition(2, 4) }
+            }
+        };
+
+        _context.Reservations.AddRange([reservation, reservation2]);
+
+        await _context.SaveChangesAsync();
+
+        _mockUserService.Setup(x => x.IsCurrentUserAdmin()).Returns(true);
+
+        // Act
+        var reservations = await _reservationsService.GetAllReservationsAsync();
+
+        // Assert
+        Assert.NotEmpty(reservations);
+        Assert.Equal(2, reservations.Count);
+    }
+
+    [Fact]
+    public async Task GetAllReservationsAsync_ReturnsOnlyOwnReservations()
+    {
+        // Arrange
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(1, 3) },
+                new Seat { Position = new SeatPosition(1, 4) }
+            }
+        };
+
+        var reservation2 = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user2",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3) },
+                new Seat { Position = new SeatPosition(2, 4) }
+            }
+        };
+
+        _context.Reservations.AddRange([reservation, reservation2]);
+
+        await _context.SaveChangesAsync();
+
+        _mockUserService.Setup(x => x.IsCurrentUserAdmin()).Returns(false);
+        _mockUserService.Setup(x => x.GetCurrentUserId()).Returns("user1");
+
+        // Act
+        var reservations = await _reservationsService.GetAllReservationsAsync();
+
+        // Assert
+        Assert.NotEmpty(reservations);
+        Assert.Single(reservations);
+        Assert.Equal("user1", reservations.First().UserId);
+    }
+
+    [Fact]
+    public async Task GetAllReservationByIdAsync_ReturnsAnyForAdmin()
+    {
+        // Arrange
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3) },
+                new Seat { Position = new SeatPosition(2, 4) }
+            }
+        };
+
+        _context.Reservations.Add(reservation);
+
+        await _context.SaveChangesAsync();
+
+        _mockUserService.Setup(x => x.IsCurrentUserAdmin()).Returns(true);
+
+        // Act
+        var savedReservation = await _reservationsService.GetByIdAsync(1);
+
+        // Assert
+        Assert.NotNull(savedReservation);
+    }
+
+    [Fact]
+    public async Task GetAllReservationByIdAsync_ThrowsAccessDenied_WhenNotAdmin()
+    {
+        // Arrange
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3) },
+                new Seat { Position = new SeatPosition(2, 4) }
+            }
+        };
+
+        _context.Reservations.Add(reservation);
+
+        await _context.SaveChangesAsync();
+
+        _mockUserService.Setup(x => x.IsCurrentUserAdmin()).Returns(false);
+        _mockUserService.Setup(x => x.GetCurrentUserId()).Returns("user2");
+
+        // Act & Assert
+        await Assert.ThrowsAsync<AccessViolationException>(() => _reservationsService.GetByIdAsync(1));
+    }
+
+    [Fact]
+    public async Task GetAllReservationByIdAsync_ReturnsWhenSameUser()
+    {
+        // Arrange
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3) },
+                new Seat { Position = new SeatPosition(2, 4) }
+            }
+        };
+
+        _context.Reservations.Add(reservation);
+
+        await _context.SaveChangesAsync();
+
+        _mockUserService.Setup(x => x.IsCurrentUserAdmin()).Returns(false);
+        _mockUserService.Setup(x => x.GetCurrentUserId()).Returns("user1");
+
+        // Act
+        var savedReservation = await _reservationsService.GetByIdAsync(1);
+
+        // Assert
+        Assert.NotNull(savedReservation);
+    }
+
+    #endregion
+
+    #region Cancel
+
+    [Fact]
+    public async Task CancelAsync_ThrowsAccessDenied_WhenReservationNotExists()
+    {
+        // Act & Assert
+        await Assert.ThrowsAsync<EntityNotFoundException>(() => _reservationsService.CancelAsync(1));
+    }
+
+    [Fact]
+    public async Task CancelAsync_ThrowsAccessDenied_WhenNotOwnReservation()
+    {
+        // Arrange
+        _mockUserService.Setup(x => x.GetCurrentUserId()).Returns("user2");
+
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3) },
+                new Seat { Position = new SeatPosition(2, 4) }
+            }
+        };
+
+        _context.Reservations.Add(reservation);
+        await _context.SaveChangesAsync();
+
+        // Act & Assert
+        await Assert.ThrowsAsync<AccessViolationException>(() => _reservationsService.CancelAsync(1));
+    }
+
+    [Fact]
+    public async Task CancelAsync_RemovesOwnReservation()
+    {
+        // Arrange
+        _mockUserService.Setup(x => x.GetCurrentUserId()).Returns("user1");
+
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3), ScreeningId = 1 },
+                new Seat { Position = new SeatPosition(2, 4), ScreeningId = 1 }
+            }
+        };
+
+        _context.Reservations.Add(reservation);
+        await _context.SaveChangesAsync();
+
+        // Act
+        await _reservationsService.CancelAsync(1);
+
+        // Assert
+        reservation = await _context.Reservations.FindAsync(1);
+        Assert.Null(reservation);
+    }
+
+    [Fact]
+    public async Task CancelAsync_RemovesAnyReservation_WhenAdmin()
+    {
+        // Arrange
+        _mockUserService.Setup(x => x.IsCurrentUserAdmin()).Returns(true);
+
+        var reservation = new Reservation
+        {
+            Email = "test@test.com",
+            Name = "Test Reservation",
+            Phone = "06301111111",
+            UserId = "user1",
+            Seats = new List<Seat>
+            {
+                new Seat { Position = new SeatPosition(2, 3), ScreeningId = 1 },
+                new Seat { Position = new SeatPosition(2, 4), ScreeningId = 1 }
+            }
+        };
+
+        _context.Reservations.Add(reservation);
+        await _context.SaveChangesAsync();
+
+        // Act
+        await _reservationsService.CancelAsync(1);
+
+        // Assert
+        reservation = await _context.Reservations.FindAsync(1);
+        Assert.Null(reservation);
+    }
+
+    #endregion
 
     #region Helper
 

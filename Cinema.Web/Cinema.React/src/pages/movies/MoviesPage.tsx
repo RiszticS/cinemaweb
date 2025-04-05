@@ -27,7 +27,7 @@ export function MoviesPage() {
                 setIsLoading(false);
             }
         }
-
+        
         loadContent();
     }, []);
 
