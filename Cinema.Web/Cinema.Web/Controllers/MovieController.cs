@@ -31,7 +31,7 @@ namespace Cinema.Web.Controllers
             var movieViewModel = _mapper.Map<MovieViewModel>(movie);
 
             // writing variable type out explicitly, because slight refactoring is required upon introducing pagination
-            IReadOnlyCollection<Screening> screenings = await _screeningsService.GetAllAsync(movieId, from: DateTime.Today);
+            IReadOnlyCollection<Screening> screenings = (await _screeningsService.GetAllAsync(movieId, from: DateTime.Today)).Items;
             var screeningViewModels = _mapper.Map<List<ScreeningViewModel>>(screenings);
 
             return View(new MovieDetailViewModel()

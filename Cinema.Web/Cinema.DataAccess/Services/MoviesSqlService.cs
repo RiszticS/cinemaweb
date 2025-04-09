@@ -62,4 +62,48 @@ internal class MoviesSqlService : IMoviesService
         return movie;
     }
 
+    public Task AddAsync(Movie movie)
+    {
+        var newId = _context.Database.SqlQuery<int>(
+                $"""
+                  INSERT INTO Movies (Title, Year, Director, Synopsis, Length, Image, CreatedAt)
+                  OUTPUT INSERTED.Id
+                  VALUES (
+                     {movie.Title}, {movie.Year}, {movie.Director}, {movie.Synopsis}, {movie.Length}, {movie.Image}, {movie.CreatedAt})
+                 """)
+            .AsEnumerable()
+            .First();
+
+
+        movie.Id = newId;
+
+        return Task.CompletedTask;
+    }
+
+    public async Task UpdateAsync(Movie movie)
+    {
+        var affectedRows = await _context.Database.ExecuteSqlInterpolatedAsync(
+            $"""
+                 UPDATE Movies
+                 SET Title = {movie.Title},
+                     Year = {movie.Year},
+                     Director = {movie.Director},
+                     Synopsis = {movie.Synopsis},
+                     Length = {movie.Length},
+                     Image = {movie.Image}
+                 WHERE Id = {movie.Id}
+             """);
+
+        if (affectedRows == 0)
+            throw new EntityNotFoundException(nameof(Movie));
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        var affectedRows = await _context.Database
+            .ExecuteSqlInterpolatedAsync($"UPDATE Movies SET DeletedAt = {DateTime.UtcNow} WHERE Id = {id}");
+
+        if (affectedRows == 0)
+            throw new EntityNotFoundException(nameof(Movie));
+    }
 }

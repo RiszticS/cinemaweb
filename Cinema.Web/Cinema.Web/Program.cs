@@ -1,11 +1,25 @@
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 using Cinema.DataAccess;
 using Cinema.Web.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDataAccess(builder.Configuration);
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    var supportedCultures = new[] { new CultureInfo("hu-HU"), new CultureInfo("en-US") };
+    options.DefaultRequestCulture = new RequestCulture("hu-HU");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+});
+
+builder.Services.AddControllersWithViews()
+        .AddViewLocalization()
+        .AddDataAnnotationsLocalization();
+
+
+builder.Services.AddDataAccess(builder.Configuration);
 builder.Services.AddWebAutomapper();
 
 var app = builder.Build();
@@ -41,9 +55,5 @@ using (var scope = app.Services.CreateScope())
     }
     DbInitializer.Initialize(context, imageSource);
 }
-
-
-
-
 
 app.Run();

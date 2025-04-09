@@ -14,10 +14,13 @@ public class MappingProfile : Profile
     /// </summary>
     public MappingProfile()
     {
+        CreateMap<MovieRequestDto, Movie>(MemberList.Source);
         CreateMap<Movie, MovieResponseDto>(MemberList.Destination);
 
+        CreateMap<RoomRequestDto, Room>(MemberList.Source);
         CreateMap<Room, RoomResponseDto>(MemberList.Destination);
 
+        CreateMap<ScreeningRequestDto, Screening>(MemberList.Source);
         CreateMap<Screening, ScreeningResponseDto>(MemberList.Destination);
 
         CreateMap<SeatRequestDto, Seat>(MemberList.Source)
@@ -36,6 +39,12 @@ public class MappingProfile : Profile
         CreateMap<Reservation, ReservationResponseDto>(MemberList.Destination)
             .ForMember(dest => dest.Screening, opt => opt.MapFrom(src => src.Seats.First().Screening));
         CreateMap<SeatStatus, SeatStatusDto>(MemberList.Source);
+
+        CreateMap<UserRequestDto, User>(MemberList.Source)
+            .ForSourceMember(src => src.Password, opt => opt.DoNotValidate())
+            .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Email));
+
+        CreateMap<User, UserResponseDto>(MemberList.Destination);
     }
 }
 
